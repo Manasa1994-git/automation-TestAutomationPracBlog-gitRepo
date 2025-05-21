@@ -32,7 +32,7 @@ public class LaptopLinksTest extends BaseTest {
                 // Optional wait after back navigation
                 Thread.sleep(1000);
             } else {
-                log.warn("Skipping broken link: (Note:small change to see github build trigger)" + linkName);
+                log.warn("Skipping broken link:(Note:small change to see github build trigger)" + linkName);
             }
         }
     }
