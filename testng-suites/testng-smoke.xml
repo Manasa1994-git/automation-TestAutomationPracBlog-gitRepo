@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="SmokeTestSuite" verbose="1">
+  
+  <!-- You can define parameters to pass to tests -->
+  <parameter name="browser" value="chrome"/>
+
+  <test name="SmokeTests">
+    
+    <!-- smoke tests is done for basic tests validation,so use basic end to end and important cases-->
+    <classes>
+       <class name="testcases.FormElementsTest"/>
+            <class name="testcases.ColorsPageTest"/>
+    </classes>
+    
+  </test>
+  
+</suite>

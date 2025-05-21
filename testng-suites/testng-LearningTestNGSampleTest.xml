@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="SampleTestNGSuite" verbose="2" parallel="false">
+  
+  <!-- Parameter passed to @Parameters in SampleTest -->
+  <parameter name="browser" value="chrome" />
+
+  <test name="TestNGFullFeatureTest">
+    <classes>
+      <class name="testcases.TestNGexamples.LearningTestNGSampleTest" />
+    </classes>
+  </test>
+
+</suite>
