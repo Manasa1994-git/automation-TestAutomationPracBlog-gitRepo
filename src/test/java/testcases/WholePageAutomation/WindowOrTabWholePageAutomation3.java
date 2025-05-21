@@ -20,7 +20,7 @@ public class WindowOrTabWholePageAutomation3 {
         WebDriver driver = new ChromeDriver();
         driver.get("https://testautomationpractice.blogspot.com/");
         
-        logger.info("New Tab- windows handling");
+        logger.info("New Tab-  windows handling");
         String parentWindow = driver.getWindowHandle();
 
         // Window Handle logic
