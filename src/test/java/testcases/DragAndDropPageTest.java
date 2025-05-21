@@ -14,6 +14,7 @@ public class DragAndDropPageTest extends BaseTest {
         dragAndDropPage.dragAndDrop();
         
         // Assertions based on successful drag and drop action
-        Assert.assertTrue(true, "Drag and Drop action performed successfully.");
-    }
+        Assert.assertTrue(true, "Drag  and Drop action performed successfully.");
+    
+}
 }
