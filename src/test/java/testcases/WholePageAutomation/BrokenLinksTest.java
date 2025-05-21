@@ -6,7 +6,7 @@ import utilities.BrokenLinksChecker;
 
 public class BrokenLinksTest extends BaseTest {
 
-    @Test(description = "Check   all links on page for broken links")
+    @Test(description = "Check    all links on page for broken links")
     public void testBrokenLinks() {
         // driver is available via BaseTest.getDriver()
         BrokenLinksChecker.checkAllLinks(getDriver());
