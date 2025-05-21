@@ -98,11 +98,7 @@
     <version>5.4.1</version>
 </dependency>
 
-    <dependency>
-    	<groupId>com.seleniumdemo</groupId>
-    	<artifactId>SeleniumPrac</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
+  
   </dependencies>
 
   <build>
