@@ -98,7 +98,10 @@
     <version>5.4.1</version>
 </dependency>
 
+<<<<<<< HEAD
   
+=======
+>>>>>>> d5194f2 (updated maven-surefire-plugin to only run testng files when the project)
   </dependencies>
 
   <build>
