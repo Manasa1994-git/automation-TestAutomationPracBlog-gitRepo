@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-19T17:37:59 IST" name="Selenium Automation Suite" finished-at="2025-05-19T17:38:30 IST" duration-ms="31358">
+    <groups>
+    </groups>
+    <test started-at="2025-05-19T17:37:59 IST" name="TestAutomationPractice Tests" finished-at="2025-05-19T17:38:30 IST" duration-ms="31358">
+      <class name="testcases.WholePageAutomation.LaptopLinksTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:testcases.WholePageAutomation.LaptopLinksTest@4febb875]" started-at="2025-05-19T17:37:59 IST" name="setUp" finished-at="2025-05-19T17:38:02 IST" duration-ms="3116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.WholePageAutomation.LaptopLinksTest.testLaptopLinks() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLaptopLinks()[pri:0, instance:testcases.WholePageAutomation.LaptopLinksTest@4febb875]" started-at="2025-05-19T17:38:02 IST" name="testLaptopLinks" description="Check laptop brand links are not broken, then click and verify page title" finished-at="2025-05-19T17:38:30 IST" duration-ms="27985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLaptopLinks -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.WholePageAutomation.LaptopLinksTest@4febb875]" started-at="2025-05-19T17:38:30 IST" name="tearDown" finished-at="2025-05-19T17:38:30 IST" duration-ms="240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLaptopLinks status=SUCCESS method=LaptopLinksTest.testLaptopLinks()[pri:0, instance:testcases.WholePageAutomation.LaptopLinksTest@4febb875] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testcases.WholePageAutomation.LaptopLinksTest@4febb875]" started-at="2025-05-19T17:38:30 IST" name="tearDownSuite" finished-at="2025-05-19T17:38:30 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- testcases.WholePageAutomation.LaptopLinksTest -->
+    </test> <!-- TestAutomationPractice Tests -->
+  </suite> <!-- Selenium Automation Suite -->
+</testng-results>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ParallelMethodSuite" parallel="methods" thread-count="3">
+    <test name="RunMethodsInParallel">
+        <classes>
+            <class name="testcases.TestNGexamples.ParallelTestExamples"/>
+       ]
+        </classes>
+    </test>
+</suite>
+ 
+ 
+ <!-- 
+	1. So here, parallel="methods" means each @Test method inside the class runs simultaneously in separate threads.
+	
+	2.The possible values for parallel are:
+
+tests — runs <test> tags in parallel (multiple test blocks)
+
+classes — runs different test classes in parallel
+
+methods — runs individual test methods in parallel (inside your classes)
+
+instances — runs different instances of test classes in parallel (less common)
+
+3.thread-count="3"
+
+This limits the maximum number of threads TestNG can create at the same time to 3.
+
+So at most, 3 test methods will run simultaneously, even if there are more than 3 test methods.
+
+	
+	
+ -->
+ 
+ 

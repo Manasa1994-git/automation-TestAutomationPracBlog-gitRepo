@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium Automation Suite" verbose="1">
+  <test name="TestAutomationPractice Tests">
+    <classes>
+      <!-- <class name="testcases.HomePageTest"/> -->
+     <!--  <class name="testcases.WholePageAutomation.SliderPageTest"/> -->
+      <!-- <class name="testcases.WholePageAutomation.FormFillPageTest"/>  -->
+      <!-- <class name="testcases.WholePageAutomation.ScrollingDropDownPageTest"/> -->
+        <class name="testcases.WholePageAutomation.LaptopLinksTest"/>   
+             
+    </classes>
+  </test>
+</suite>
+
+
+<!-- 
+	1.TestNG will execute the test classes in the exact order they appear in your testng.xml file 
+	1. You can give any name to the suite and the test 
+but you need to provide the correct name to the <classes> tag which is a combination 
+of your Package name and Test Case name. 
+
+2.
+verbose="1" specifically – It means:
+
+Only basic logs will be shown.
+
+You’ll see which tests are running and whether they passed or failed, but not step-by-step internal details.
+
+	
+	3.<?xml version="1.0" encoding="UTF-8"?>
+	“Hey! This file follows XML version 1.0 rules, and the text inside is encoded using UTF-8 so read it accordingly.”
+	
+	4.
+	If ParallelTestExample has 5 @Test methods:
+
+java
+Copy
+Edit
+@Test
+public void testA() { ... }
+
+@Test
+public void testB() { ... }
+
+@Test
+public void testC() { ... }
+
+@Test
+public void testD() { ... }
+
+@Test
+public void testE() { ... }
+TestNG will start running testA, testB, and testC simultaneously (3 threads), and once any finishes, it picks testD or testE next.
+	
+	5.
+	Add this inside each test method:
+System.out.println("Running " + Thread.currentThread().getName() + " - " + System.currentTimeMillis());
+When you run your suite, you’ll see different thread names running methods concurrently.
+	6. if you want to skip a method from the class, you can you this.
+	<class name="testcases.SomeClass">
+  <methods>
+    <exclude name="methodNameToSkip"/>
+  </methods>
+</class>
+7.if you want to skip a classs you should comment it out
+    comment this like : <class name="testcases.HomePageTest"/> 
+
+ -->
+  
+ 

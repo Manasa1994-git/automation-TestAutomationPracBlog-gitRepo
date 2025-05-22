@@ -1,0 +1,50 @@
+
+<suite name="CrossBrowserSuite" parallel="tests" thread-count="3">
+
+    <!-- Chrome Tests: No group filtering (all test methods in specified classes will run) -->
+    <test name="ChromeTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testcases.FormElementsTest"/>
+            <class name="testcases.ColorsPageTest"/>
+        </classes>
+    </test>
+
+    <!-- Firefox Tests: Only test methods with group 'firefoxTests' will run,currently firefoxTests 
+    not present in tests like @Test(groups = {"firefoxTests"}), so this wont run too -->
+    <test name="FirefoxTests">
+        <groups>
+            <run>
+                <include name="firefoxTests"/>
+            </run>
+        </groups>
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="testcases.SortedListPageTest"/>
+            <class name="testcases.DatePickerPageTest"/>
+        </classes>
+    </test>
+
+    <!-- Edge Tests: Only test methods with group 'edgeTests' or 'ungrouped' will run , currently ungrouped tests are not present in
+    suite so this wont run-->
+    <test name="EdgeTests">
+        <groups>
+            <run>
+                <include name="edgeTests"/>
+                <include name="ungrouped"/> 
+            </run>
+        </groups>
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="testcases.FileUploadPageTest"/>
+            <class name="testcases.TablePageTest"/>
+        </classes>
+    </test>
+    </suite>
+
+
+<!-- 
+	
+	1.Cross-browser tests SHOULD be run in parallel to save time and simulate real scenarios.
+	2.Your @Test(groups={...}) annotation must match exactly what you write in the TestNG XML <include name="..." />.
+-->
