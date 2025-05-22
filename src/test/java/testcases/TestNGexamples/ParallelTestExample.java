@@ -6,7 +6,7 @@ public class ParallelTestExample {
 
     @Test
     public void testA() throws InterruptedException {
-        System.out.println("Starting testA - Thread: " + Thread.currentThread().getName());
+        System.out.println("Starting testA - T hread: " + Thread.currentThread().getName());
         Thread.sleep(2000); // simulate some work by sleeping 2 seconds
         System.out.println("Ending testA - Thread: " + Thread.currentThread().getName());
     }
