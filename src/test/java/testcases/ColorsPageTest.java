@@ -16,11 +16,11 @@ public class ColorsPageTest extends BaseTest {
         ColorsPage colorsPage = new ColorsPage(getDriver()); // Use the thread-local driver
 
         // Select multiple colors
-        colorsPage.selectColors("Red", "Green", "Blue");
+        colorsPage.selectColors("Red", " Green", "Blue");
 
         // Verify selected options
         List<WebElement> selectedOptions = colorsPage.getSelectedColors();
-        Assert.assertEquals(selectedOptions.size(), 3, "Should select 3 colors");
+        Assert.assertEquals(selectedOptions.size(), 3, "Should  select 3 colors");
 
         // Assert that each selected color is indeed selected
         Assert.assertTrue(selectedOptions.stream().anyMatch(e -> e.getText().equals("Red")), "color red ,Red should be selected");
