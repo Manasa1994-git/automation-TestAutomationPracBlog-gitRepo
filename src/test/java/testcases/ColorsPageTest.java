@@ -23,7 +23,7 @@ public class ColorsPageTest extends BaseTest {
         Assert.assertEquals(selectedOptions.size(), 3, "Should select 3 colors");
 
         // Assert that each selected color is indeed selected
-        Assert.assertTrue(selectedOptions.stream().anyMatch(e -> e.getText().equals("Red")), "Red should be selected");
+        Assert.assertTrue(selectedOptions.stream().anyMatch(e -> e.getText().equals("Red")), "color red ,Red should be selected");
         Assert.assertTrue(selectedOptions.stream().anyMatch(e -> e.getText().equals("Green")), "Green should be selected");
         Assert.assertTrue(selectedOptions.stream().anyMatch(e -> e.getText().equals("Blue")), "Blue should be selected");
 
