@@ -17,6 +17,6 @@ public class RegressionTestExample {
 
     @Test(groups = "sanity")
     public void verifyLogo() {
-        System.out.println("Sanity: verifyLogo");
+        System.out.println("Sanity:  verifyLogo");
     }
 }
