@@ -16,7 +16,7 @@ public class ColorsPageTest extends BaseTest {
         ColorsPage colorsPage = new ColorsPage(getDriver()); // Use the thread-local driver
 
         // Select multiple colors
-        colorsPage.selectColors("Red", "Green", "Blue");
+        colorsPage.selectColors("Red", " Green", "Blue");
 
         // Verify selected options
         List<WebElement> selectedOptions = colorsPage.getSelectedColors();
