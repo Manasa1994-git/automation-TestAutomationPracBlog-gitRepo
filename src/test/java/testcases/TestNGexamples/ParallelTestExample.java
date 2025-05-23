@@ -22,7 +22,7 @@ public class ParallelTestExample {
     public void testC() throws InterruptedException {
         System.out.println("Starting testC - Thread: " + Thread.currentThread().getName());
         Thread.sleep(2000);
-        System.out.println("Ending testC - Thread: " + Thread.currentThread().getName());
+        System.out.println("Ending  testC - Thread: " + Thread.currentThread().getName());
     }
 
     @Test
