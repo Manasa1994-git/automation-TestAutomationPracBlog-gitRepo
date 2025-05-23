@@ -21,7 +21,7 @@ public class ColorsPageTest extends BaseTest {
         // Verify selected options
         List<WebElement> selectedOptions = colorsPage.getSelectedColors();
    
-        Assert.assertEquals(selectedOptions.size(), 3, "Should  select 3 colors");
+        Assert.assertEquals(selectedOptions.size(), 3, "Should   select 3 colors");
 
 
         // Assert that each selected color is indeed selected
